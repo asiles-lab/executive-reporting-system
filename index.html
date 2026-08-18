@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Executive Reporting System | Reportes para decidir, vender y mostrar valor</title>
+    <title>Executive Reporting System | Reportes para decidir, aportar y mostrar valor</title>
     <meta
       name="description"
       content="Transformamos datos de &#225;reas, proyectos, ventas, operaciones y negocios en reportes ejecutivos profesionales, editables y listos para decidir o presentar."
@@ -34,7 +34,7 @@
           <h1>Tus datos tienen que servir para decidir.</h1>
           <p class="hero-copy">
             Convertimos datos dispersos de operaci&#243;n, ventas, proyectos, clientes y gesti&#243;n en reportes
-            ejecutivos claros, editables y listos para presentar, vender valor o tomar mejores decisiones.
+            ejecutivos claros, editables y listos para presentar, aportar valor o tomar mejores decisiones.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#example">Ver ejemplo</a>
@@ -278,7 +278,7 @@
           <div>
             <span>01</span>
             <strong>No cambia s&#243;lo el gr&#225;fico.</strong>
-            <p>Cambia el lenguaje: operativo para controlar, ejecutivo para decidir, comercial para vender valor.</p>
+            <p>Cambia el lenguaje: operativo para controlar, ejecutivo para decidir, comercial para aportar valor.</p>
           </div>
           <div>
             <span>02</span>
@@ -323,12 +323,16 @@
           <h2>Probemos con un caso real antes de convertirlo en un sistema mensual.</h2>
           <p>
             La primera conversaci&#243;n sirve para entender qu&#233; informaci&#243;n ten&#233;s, qui&#233;n consume el reporte
-            y qu&#233; resultado necesit&#225;s provocar: decidir, vender, renovar, alinear, priorizar o mostrar
+            y qu&#233; resultado necesit&#225;s provocar: decidir, aportar valor, renovar, alinear, priorizar o mostrar
             avance. Sin plataforma ni setup pesado: datos dispersos convertidos en criterio ejecutivo.
           </p>
         </div>
-        <form class="contact-form" id="contactForm" data-endpoint="http://127.0.0.1:8787/lead">
+        <form class="contact-form" id="contactForm" action="https://formsubmit.co/gestiaexecutivereporting@gmail.com" method="POST">
           <input type="hidden" name="_subject" value="Nuevo lead - Executive Reporting System" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="https://asiles-lab.github.io/executive-reporting-system/gracias.html" />
+          <input type="hidden" name="_autoresponse" value="Gracias por escribirnos. Recibimos tu solicitud para evaluar un reporte ejecutivo piloto. En las proximas horas vas a recibir el contacto de nuestro equipo para revisar puntualmente tu caso y planificar una demo sobre que podemos construir con los datos que tenes hoy. Para avanzar, probablemente vamos a pedirte una fuente de datos en Excel, CSV, Google Sheets o un export similar. No hace falta que este perfecto: puede ser una planilla operativa, un reporte actual, un listado de ventas, proyectos, clientes, costos, tickets, tareas o indicadores dispersos. Nuestro foco es convertir informacion dispersa en una lectura clara para tomar mejores decisiones o presentar valor con mas autoridad." />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
           <label>
             Nombre
             <input name="name" type="text" autocomplete="name" placeholder="Tu nombre" required />
@@ -377,7 +381,7 @@
             <textarea name="message" rows="4" placeholder="Ventas, margen, operaci&#243;n, clientes, proyectos, riesgos, foco..."></textarea>
           </label>
           <button class="button primary full" type="submit">Preparar consulta</button>
-          <p class="form-note" id="formNote">Se abrir&#225; un email con el resumen listo para enviar.</p>
+          <p class="form-note" id="formNote">Recibimos la consulta por email y el contacto recibe una confirmaci&#243;n autom&#225;tica.</p>
         </form>
       </section>
     </main>
