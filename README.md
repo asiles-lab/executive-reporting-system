@@ -6,40 +6,39 @@ Landing page comercial para presentar servicios de reporting ejecutivo por area,
 
 - `index.html`: landing principal.
 - `styles.css`: estilos de la landing.
-- `script.js`: envio del formulario al endpoint configurado.
+- `script.js`: comportamiento del formulario.
 - `gracias.html`: pagina de confirmacion.
 - `assets/hero-services.webp`: imagen principal optimizada.
-- `mail-service/`: servicio local para recibir leads por email y enviar autorespuesta.
+- `mail-service/`: servicio local opcional para recibir leads por email y enviar autorespuesta desde Gmail.
 
-## Publicar con GitHub Pages
+## Web publica
 
-1. Entrar al repo en GitHub.
-2. Ir a `Settings` > `Pages`.
-3. En `Build and deployment`, elegir `Deploy from a branch`.
-4. En `Branch`, seleccionar `main` y carpeta `/root`.
-5. Guardar.
-
-La URL esperada es:
+La landing esta publicada con GitHub Pages en:
 
 ```text
 https://asiles-lab.github.io/executive-reporting-system/
 ```
 
-Puede tardar unos minutos en estar disponible.
+## Formulario publico
 
-## Formulario y mails
+El formulario de `index.html` esta configurado para enviar consultas desde GitHub Pages mediante FormSubmit:
 
-La landing envia el formulario al endpoint configurado en `index.html`, atributo `data-endpoint` del formulario.
-
-Para prueba local, el endpoint actual puede ser:
-
-```text
-http://127.0.0.1:8787/lead
+```html
+<form class="contact-form" id="contactForm" action="https://formsubmit.co/gestiaexecutivereporting@gmail.com" method="POST">
 ```
 
-Para que funcione desde una web publica, ese endpoint debe ser una URL publica que apunte al servicio local, por ejemplo mediante un tunel seguro.
+Incluye:
 
-## Ejecutar el servicio de mails local
+- Email interno con todos los datos del lead.
+- Redireccion a `gracias.html` despues del envio.
+- Autorespuesta al contacto.
+- Campo honeypot antispam.
+
+La primera vez que se envie el formulario, FormSubmit puede mandar un email de activacion a `gestiaexecutivereporting@gmail.com`. Hay que abrir ese email y confirmar el formulario para que los proximos envios entren normalmente.
+
+## Servicio de mails local opcional
+
+El directorio `mail-service/` queda como alternativa propia si mas adelante se quiere tener control total del envio desde Gmail o exponer un endpoint propio por HTTPS.
 
 Dentro de `mail-service/`:
 
