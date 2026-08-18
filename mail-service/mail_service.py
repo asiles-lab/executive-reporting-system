@@ -114,7 +114,7 @@ La idea de la primera revision es entender:
 
 - Que informacion tenes disponible.
 - Quien consume el reporte.
-- Que necesitas lograr: decidir, vender valor, renovar, alinear, priorizar o mostrar avance.
+- Que necesitas lograr: decidir, aportar valor, renovar, alinear, priorizar o mostrar avance.
 - Que salida conviene construir: Executive Report, Client Business Review, Owner Brief o un pack por area.
 
 Nuestro foco no es convertir datos en graficos. Es convertir informacion dispersa en una lectura clara para tomar mejores decisiones o presentar valor con mas autoridad.
