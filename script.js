@@ -2,9 +2,15 @@ const form = document.querySelector("#contactForm");
 const note = document.querySelector("#formNote");
 
 form?.addEventListener("submit", (event) => {
+  const endpoint = form.dataset.endpoint?.trim();
+
+  if (!endpoint && form.getAttribute("action")) {
+    note.textContent = "Enviando solicitud...";
+    return;
+  }
+
   event.preventDefault();
 
-  const endpoint = form.dataset.endpoint?.trim();
   const data = new FormData(form);
   const name = data.get("name")?.toString().trim() || "";
   const email = data.get("email")?.toString().trim() || "";
